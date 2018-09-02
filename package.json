@@ -1,0 +1,8 @@
+{
+  "name": "",
+  "version": "",
+  "scripts":{"compile:sass": "node-sass sass/main.scss styles.css -w"},
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
