@@ -36,14 +36,14 @@ dark red #d60000;
       fill: none;
       stroke-dasharray: 500;
       stroke-dashoffset: 500;
-      animation: animate 2s linear forwards; }
+      animation: animate 3s linear forwards; }
   .header h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    animation: heading 1s ease-in forwards 1.5s; }
+    animation: heading 1s ease-in forwards 2s; }
 
 @keyframes animate {
   100% {
@@ -54,3 +54,8 @@ dark red #d60000;
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+.about-section {
+  background-color: #F7F7F7;
+  margin-top: -25vh;
+  text-align: center; }
