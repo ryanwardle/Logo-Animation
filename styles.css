@@ -17,13 +17,41 @@ red #ff0000
 dark red #d60000;
 */
 .header {
+  font-family: 'Permanent Marker', cursive;
   color: #f7f7f7;
   background-image: linear-gradient(to right bottom, rgba(255, 39, 39, 0.9), rgba(214, 0, 0, 0.9)), url(hero-img.jpeg);
   background-size: cover;
   height: 95vh;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
-  .header__text-box {
-    text-align: center; }
+  .header svg {
+    width: 100%;
+    font-size: 8rem;
+    letter-spacing: 1rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-66%, -50%); }
+    .header svg text {
+      stroke: #fff;
+      fill: none;
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: animate 2s linear forwards; }
+  .header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: heading 1s linear forwards 2s; }
 
-.heading {
-  letter-spacing: 15.6; }
+@keyframes animate {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes heading {
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
