@@ -56,7 +56,8 @@ dark red #d60000;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: heading 1s linear forwards 2s;
+    opacity: 0;
+    animation: heading 1s ease-in forwards 1.5s;
   }
 }
 
@@ -69,11 +70,9 @@ dark red #d60000;
 @keyframes heading{
   0%{
     opacity: 0;
-    transform: translateY(-5rem);
   }
 
   100%{
     opacity: 1;
-    transform: translateY(0);
   }
 }
